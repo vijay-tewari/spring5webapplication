@@ -18,8 +18,8 @@ public class Publisher {
     private String state;
     private String zip;
 
-    @OneToMany
-    private Set<Book> books = new HashSet<>();
+    //@OneToMany
+  //  private Set<Book> books = new HashSet<>();
 
     public Publisher() {
     }
@@ -33,7 +33,7 @@ public class Publisher {
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", zip='" + zip + '\'' +
-                ", book=" + books +
+             //   ", book=" + books +
                 '}';
     }
 
@@ -85,13 +85,9 @@ public class Publisher {
         this.zip = zip;
     }
 
-    public Set<Book> getBooks() {
-        return books;
-    }
 
-    public void setBooks(Set<Book> books) {
-        this.books = books;
-    }
+
+
 
     @Override
     public boolean equals(Object o) {
